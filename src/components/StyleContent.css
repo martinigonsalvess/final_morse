@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*    FULL WEBSITE         */
+
+@media (max-width: 1920px) {
+  h1 {
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background: radial-gradient(ellipse at center, #a90329 0%,#59011a 44%,#28000f 100%); */
+  }
+
+  .content {
+    font-family: "Victorian";
+    color: goldenrod;
+    font-size: 4rem;
+  }
+
+  /* Add icon in each corner */
+
+  #upper_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  #upper_right {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transform: rotate(180deg) scale(-1, 1);
+  }
+  #lower_left {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    transform: scale(-1, 1);
+  }
+  #lower_right {
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+  }
+  .content-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(
+      ellipse at center,
+      #a90329 0%,
+      #59011a 44%,
+      #28000f 100%
+    );
+  }
+
+  .content-input-text {
+    /* background-image: url("./images/wood.jpg"); */
+    display: flex;
+    width: 60%;
+    height: 55px;
+    background: #373736;
+    border: 2px solid goldenrod;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* outline: 4px solid #fff;
+    box-shadow:inset 0 0 0 4px #fff; */
+    box-shadow: 10px 12px 15px 5px #000000;
+  }
+  .textInput,
+  .morseInput {
+    background: #373736;
+    color: white;
+    width: 50%;
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .content-output-morse {
+    display: flex;
+    width: 60%;
+    height: 75px;
+    background: #373736;
+    border: 2px solid goldenrod;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 12px 15px 5px #000000;
+  }
+  .content-alphabeth-buttons {
+    background-image: url("./images/wood.jpg");
+    display: flex;
+    width: 60%;
+    height: 70vh;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* outline: 4px solid #fff;
+    box-shadow:inset 0 0 0 4px #fff; */
+    box-shadow: 10px 12px 15px 5px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-about-us {
+    display: flex;
+    width: 60%;
+    height: 55px;
+    background: #373736;
+    border: 2px solid goldenrod;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /* outline: 4px solid #fff;
+    box-shadow:inset 0 0 0 4px #fff; */
+    box-shadow: 10px 12px 15px 5px #000000;
+  }
+  .img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .a {
+    height: 50px;
+    width: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-alphabeth-buttons,
+  .content-input-text,
+  .content-output-morse {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #upper_left,
+  #upper_right,
+  #lower_right,
+  #lower_left {
+    font-size: 1.6rem;
+  }
+  .content-input-top-icon {
+    display: flex;
+    width: auto;
+    height: 25px;
+    color: goldenrod;
+    margin-bottom: 25px;
+  }
+  .content-input-text {
+    display: flex;
+    width: 90%;
+    height: 55px;
+    background: #373736;
+    border: 2px solid goldenrod;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* outline: 4px solid #fff;
+        box-shadow:inset 0 0 0 4px #fff; */
+  }
+  .content-output-morse {
+    display: flex;
+    width: 90%;
+    height: 75px;
+    background: #373736;
+    border: 2px solid goldenrod;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* outline: 4px solid #fff;
+        box-shadow:inset 0 0 0 4px #fff; */
+  }
+  .content-alphabeth-buttons {
+    background-image: url("./images/wood.jpg");
+    display: flex;
+    width: 90%;
+    height: 70vh;
+    /* background:white; */
+    /* border:2px solid gray; */
+    margin-top: 10px;
+    /* outline: 4px solid #fff;
+        box-shadow:inset 0 0 0 4px #fff; */
+  }
+  .footer-about-us {
+    display: flex;
+    width: 90%;
+    height: 55px;
+    background: #373736;
+    border: 2px solid goldenrod;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* outline: 4px solid #fff;
+        box-shadow:inset 0 0 0 4px #fff;   */
+  }
+}
